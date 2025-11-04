@@ -1,0 +1,16 @@
+ingest:
+  pdf_path: "./data/sample.pdf"
+
+layout:
+  model_name: "deepdoctection-layout"
+
+mask:
+  remove_labels: ["logo", "footer", "barcode"]
+
+enhance:
+  contrast: "CLAHE"
+  adaptive: true
+
+ocr:
+  engine: "tesseract"
+  lang: "eng"
